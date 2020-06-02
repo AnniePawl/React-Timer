@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### Timer App Objectives 
+1. Build a timer object 
+2. Define Actions of timer 
+3. Define Reducers of timer 
+4. Allow users to create a timer 
+5. Allow users to see list of timers 
+6. Users should be able to start/ stop clock on timers 
+7. Style the app 
+8. Allow timers to persist 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
