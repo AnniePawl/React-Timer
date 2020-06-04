@@ -19,7 +19,11 @@
   - In timer-view, allow display ofname, time, and start/stop button 
   - Start/ stop button should change text when click for now 
   - Display progress so far in browser
-6. Users should be able to start/stop the clock on their Timers
+6. Users should be able to start/stop the clock on their Timers 
+    - Track delta time for each timer 
+    - Create update action that updates time 
+    - Insure reducers knows how ot properly handle update actionn 
+    - Tell store to run update so view can display accurate time 
 7. Style the app
 8. Allow Timers to persist
 
