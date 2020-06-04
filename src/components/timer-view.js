@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { toggleTimer } from '../actions';
+import { toggleTimer, deleteTimer } from '../actions';
 import { formatTime } from '../utils';
+
 import './timers.css';
 
 class TimerView extends Component {
@@ -26,6 +27,14 @@ class TimerView extends Component {
 				>
 					{timer.isRunning ? 'Stop' : 'Start'}
 				</button>
+				{/* delete button */}
+				<button
+					onClick={(e) => {
+						this.props.deleteTimer(index);
+					}}
+				>
+					Delete
+				</button>
 			</div>
 		);
 	}
@@ -36,8 +45,9 @@ const mapStateToProps = (state) => {
 };
 
 // Use toggleTimer action
-const mapDispatchToProps = () => {
-	return { toggleTimer };
+
+const mapActionsToProps = () => {
+	return { toggleTimer, deleteTimer };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps())(TimerView);
+export default connect(mapStateToProps, mapActionsToProps())(TimerView);

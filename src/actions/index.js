@@ -3,6 +3,14 @@
 // Each action should be defined as const w/ string value
 // Each action needs action creator
 
+// DELETE TIMER
+export const deleteTimer = (index) => {
+	return {
+		type: DELETE_TIMER,
+		payload: { index }
+	};
+};
+
 // Add Timer
 // Adds new timer object to array of timers
 export const addTimer = (name) => {
@@ -44,3 +52,4 @@ export const NEW_TIMER = 'NEW_TIMER';
 export const TOGGLE_TIMER = 'TOGGLE_TIMER';
 export const SELECT_TIMER = 'SELECT_TIMER';
 export const UPDATE = 'UPDATE';
+export const DELETE_TIMER = 'DELETE_TIMER';

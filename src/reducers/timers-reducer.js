@@ -1,9 +1,14 @@
 // Import actions
-import { NEW_TIMER, TOGGLE_TIMER, UPDATE } from '../actions/index';
+import { NEW_TIMER, TOGGLE_TIMER, UPDATE, DELETE_TIMER } from '../actions/index';
 import Timer from '../Timer';
 
 const timerReducer = (state = [], action) => {
 	switch (action.type) {
+		case DELETE_TIMER:
+			return state.filter((item, i) => {
+				return i !== action.payload.index;
+			});
+
 		case UPDATE:
 			return state.map((timer) => {
 				if (timer.isRunning) {

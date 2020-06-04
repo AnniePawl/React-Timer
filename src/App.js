@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { createStore } from 'redux';
 import { loadState, saveState } from './utils';
-import throttle from 'lodash/throttle'
+import throttle from 'lodash/throttle';
 // Provider component makes Redux store available to any nested components wrapped in connect() function
 import { Provider } from 'react-redux';
 import reducers from './reducers';
@@ -17,10 +17,11 @@ import ListTimers from './components/list-timers';
 // Deal w/ Timer State
 const persistedState = loadState();
 const store = createStore(reducers, persistedState);
-store.subscribe(throttle(() => {
-  saveState(store.getState())
-}, 1000));
-
+store.subscribe(
+	throttle(() => {
+		saveState(store.getState());
+	}, 1000)
+);
 
 // Update timers every 50 ms
 let lastUpdateTime = Date.now();
@@ -37,7 +38,7 @@ class App extends Component {
 			<Provider store={store}>
 				<div className="App">
 					<header className="App-header">
-						<h1 className="title">It's Timer Time</h1>
+						<h1 className="title">It's Time to Time</h1>
 					</header>
 					{/* Timer Components */}
 					<NewTimer />
