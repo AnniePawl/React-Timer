@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // Import actio to add new Timer
 import { addTimer } from '../actions';
+import './timers.css';
 
 class NewTimer extends Component {
 	constructor(props) {
@@ -10,8 +11,9 @@ class NewTimer extends Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className="new-timer__container">
 				<input
+					className="new-timer__input"
 					type="text"
 					placeholder="Add Timer Name"
 					name="name"
@@ -19,6 +21,7 @@ class NewTimer extends Component {
 					onChange={(e) => this.setState({ name: e.target.value })}
 				/>
 				<button
+					className="new-timer__button"
 					onClick={(e) => {
 						this.props.addTimer(this.state.name);
 					}}

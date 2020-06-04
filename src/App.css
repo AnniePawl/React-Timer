@@ -1,15 +1,17 @@
 .App-header {
-	background-color: #4f8a8b;
+	background-color: #3f3f44;
 	height: 12vh;
 	font-size: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 
 h1 {
-	color: #efee9d;
+	color: #f4f7c5;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 36px;
 }

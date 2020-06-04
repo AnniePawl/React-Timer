@@ -1,0 +1,51 @@
+.new-timer__container {
+	display: flex;
+	justify-content: center;
+}
+
+.timer-view__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.timer-view__time {
+	color: #3f3f44;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.timer-view__name {
+	font-family: 'Press Start 2P', cursive;
+	color: #3f3f44;
+}
+
+.new-timer__input {
+	padding: 0.5em;
+	font-size: 1em;
+	border: 2px solid #3f3f44;
+	background-color: #f4f7c5;
+	border-radius: 0.5em 0 0 0.5em;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.new-timer__input:hover {
+	background-color: white;
+}
+
+.new-timer__button,
+.timer-view__button {
+	border: 2px solid #3f3f44;
+	font-size: 1em;
+	padding: 0.5em;
+	background-color: #3f3f44;
+	color: #f4f7c5;
+	border-radius: 0 0.5em 0.5em 0;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.new-timer__button:hover {
+	background-color: #cceabb;
+	color: #3f3f44;
+}
