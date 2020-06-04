@@ -1,9 +1,15 @@
 .App-header {
-	background-color: #282c34;
-	height: 20vh;
+	background-color: #4f8a8b;
+	height: 12vh;
+	font-size: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: white;
+}
+
+h1 {
+	color: #efee9d;
+	text-transform: uppercase;
+	font-size: 40px;
 }
