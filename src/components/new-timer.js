@@ -30,6 +30,12 @@ class NewTimer extends Component {
 	}
 }
 
+// Not needed ?
+const mapStateToProps = (state) => {
+	return {};
+};
+
+// Connects newTimer action creator to this component
 const mapDispatchToProps = () => {
 	return { addTimer };
 };
