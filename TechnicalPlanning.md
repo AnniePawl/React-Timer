@@ -25,7 +25,9 @@
     - Insure reducers knows how ot properly handle update actionn 
     - Tell store to run update so view can display accurate time 
 7. Style the app
-8. Allow Timers to persist
+8. Allow Timers to persist  
+  - Load and save state between store and local storage 
+  - Throttle save to local storage to improve performance
 
 Timer Properties <br>
 - name of timer (string)
