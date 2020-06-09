@@ -33,3 +33,10 @@ Timer Properties <br>
 - name of timer (string)
 - time in milliseconts (number)
 - isRunning, tracks whether timer is running or paused (boolean )
+
+
+
+
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
